@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Reading the CSV File
+# Reading the CSV File aa
 df = pd.read_csv('Social_Network_Ads.csv')
 
 # Select first 3 columns as features and last column as target variable
