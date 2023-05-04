@@ -69,7 +69,7 @@ z2 = np.dot(a1, w2) + b2
 y_pred = 1 / (1 + np.exp(-z2))
 for i in range(400):
     if y_pred[i] >= 0.5:
-        y_pred[i] = 1
+        y_pred[i] = 2
     else:
         y_pred[i] = 0
 
