@@ -7,7 +7,7 @@ from mpl_toolkits.mplot3d import Axes3D
 # # Read CSV file
 # df = pd.read_csv('50_Startups.csv')
 
-# # Select first 3 columns as features and last column as target variable
+# # Select first 3 column as features and last column as target variable
 # x = df.iloc[:, :3].values
 # y = df.iloc[:, -1].values.reshape(-1, 1)
 
