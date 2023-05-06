@@ -20,9 +20,9 @@ m = 400 #number of training examples
 cost_history = [] #cost function
 
 # Initializing weights and biases
-w1 = np.zeros(2, 3) # weights for first hidden layer
+w1 = np.random.randn(2, 3) # weights for first hidden layer
 b1 = np.zeros((1, 3)) # biases for first hidden layer
-w2 = np.zeros(3, 1) # weights for output layer
+w2 = np.random.randn(3, 1) # weights for output layer
 b2 = 0 # bias for output layer
 
 # Gradient Descent
@@ -69,7 +69,7 @@ z2 = np.dot(a1, w2) + b2
 y_pred = 1 / (1 + np.exp(-z2))
 for i in range(400):
     if y_pred[i] >= 0.5:
-        y_pred[i] = 2
+        y_pred[i] = 1
     else:
         y_pred[i] = 0
 
